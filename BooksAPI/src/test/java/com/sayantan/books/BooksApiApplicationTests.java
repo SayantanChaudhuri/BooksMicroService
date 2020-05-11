@@ -42,7 +42,7 @@ class BooksApiApplicationTests {
 
     @Test
     public void testSaveBook() {
-        Book book = new Book(0L, "Gitanjali", "Rabindranath Tagore", 2000, 1200.00);
+        Book book = new Book(0L, "Gitanjali", "Rabindranath Tagore", 60, 2000, 1200.00);
         ResponseEntity<Books> responseEntity = this.restTemplate
                 .postForEntity("http://localhost:" + port + "/saveBook", book, Books.class);
         assertEquals(200, responseEntity.getStatusCodeValue());

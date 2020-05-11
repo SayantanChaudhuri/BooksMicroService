@@ -14,6 +14,7 @@ export class BookFormComponent implements OnInit {
     bookid: [0],
     bookName: [''],
     authorName: [''],
+    authorAge: [35],
     price: ['0.00'],
     totalPage: [0]
   });

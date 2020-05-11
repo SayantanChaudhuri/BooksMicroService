@@ -5,7 +5,6 @@ import com.sayantan.books.model.BookEntity;
 import com.sayantan.books.model.Books;
 import com.sayantan.books.repository.BookRepository;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -22,7 +21,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.greaterThan;
 
 @RunWith(SpringRunner.class)
 public class BookServiceImplIntegrationTest {
@@ -62,7 +60,6 @@ public class BookServiceImplIntegrationTest {
     @Before
     public void setUp() {
         pageable = PageRequest.of(0, 10, Sort.by("bookName"));
-        // when
 
         Mockito.when(bookRepository.findAll(pageable))
                 .thenReturn(bookEntities);

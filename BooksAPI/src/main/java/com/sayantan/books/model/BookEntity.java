@@ -24,6 +24,9 @@ public class BookEntity {
     @Column(name = "author_name")
     private String authorName;
 
+    @Column(name = "author_age")
+    private int authorAge;
+
     @Column(name = "total_page")
     private int totalPage;
 

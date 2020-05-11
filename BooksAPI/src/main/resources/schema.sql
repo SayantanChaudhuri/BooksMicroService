@@ -6,6 +6,7 @@ CREATE TABLE TBL_BOOKS (
   book_id BIGINT AUTO_INCREMENT PRIMARY KEY,
   book_name VARCHAR(250) NOT NULL,
   author_name VARCHAR(250) NOT NULL,
+  author_age INT,
   total_page INT,
   price DOUBLE
 );
